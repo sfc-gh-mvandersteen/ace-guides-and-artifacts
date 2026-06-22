@@ -1,8 +1,38 @@
-# Purpose
-The purpose of this repo is for Account Engineers accross the company to easily share templated, generalized guides that have helped customers on all things related to Snowflake. 
+# ACE Guides & Artifacts
 
-# Content
-General Guides located in the general_guides folder, subfolders organized by high level subject, and the actual guides related to each high level subject are in those respective folders. 
+A curated collection of battle-tested, customer-facing guides created by Snowflake Account Engineers. These guides distill real-world implementation experience into reusable resources that any AE can share with customers.
 
-# Standard
-A good guide must be battle tested with at least one customer. The guides should be generalized, narrative, educational, and sequential and grounded in Snowflakes best practices and well-architected framework. If it requires set up external to Snowflake, the guide should cover those directives as well. As best practice, the guides should also have comments that explain the related objects and parameters in enough detail that 9/10 customers could complete the outlined task without additional support. 
+## Repository Structure
+
+```
+general_guides/
+├── DAMA/                        # Data management (DAMA framework) on Snowflake
+├── Networking_and_Security/     # Private connectivity (AWS PrivateLink, Azure Private Link)
+└── RBAC/                        # Role-Based Access Control (EN, PT-BR, ES)
+```
+
+Guides are organized by high-level subject area. Each subfolder contains one or more guides in Markdown (`.md`) or Jupyter Notebook (`.ipynb`) format.
+
+## Available Guides
+
+| Subject | Guide | Format |
+|---------|-------|--------|
+| DAMA | Data Management on Snowflake | Markdown |
+| Networking & Security | AWS PrivateLink Setup | Notebook |
+| Networking & Security | Azure Private Link Setup | Notebook |
+| RBAC | Role-Based Access Control | Markdown (EN, PT-BR, ES) |
+
+## Contributing
+
+All contributions are welcome. To add a new guide, place it in the appropriate subfolder under `general_guides/` (or create a new subfolder for a new topic area).
+
+### Guide Standards
+
+A guide in this repo must meet the following criteria:
+
+1. **Battle-tested** — Validated with at least one customer engagement.
+2. **Generalized** — Free of customer-specific details; usable by any account team.
+3. **Narrative & sequential** — Walks the reader through the process step by step.
+4. **Grounded in best practices** — Aligned with the Snowflake Well-Architected Framework.
+5. **Self-contained** — If external setup is required (cloud provider config, third-party tools), the guide covers those steps as well.
+6. **Well-commented** — Objects, parameters, and decisions are explained in enough detail that a customer can complete the task without additional support.
